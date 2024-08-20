@@ -1,0 +1,79 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FirstApp
+build_property.RootNamespace = FirstApp
+build_property.ProjectDir = C:\Users\SKT\source\repos\FirstApp\FirstApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\SKT\source\repos\FirstApp\FirstApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/SKT/source/repos/FirstApp/FirstApp/Pages/Absensi/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJzZW5zaVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SKT/source/repos/FirstApp/FirstApp/Pages/Absensi/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJzZW5zaVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SKT/source/repos/FirstApp/FirstApp/Pages/Absensi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJzZW5zaVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SKT/source/repos/FirstApp/FirstApp/Pages/Absensi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJzZW5zaVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SKT/source/repos/FirstApp/FirstApp/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SKT/source/repos/FirstApp/FirstApp/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SKT/source/repos/FirstApp/FirstApp/Pages/Karyawan/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS2FyeWF3YW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SKT/source/repos/FirstApp/FirstApp/Pages/Karyawan/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS2FyeWF3YW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SKT/source/repos/FirstApp/FirstApp/Pages/Karyawan/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS2FyeWF3YW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SKT/source/repos/FirstApp/FirstApp/Pages/Karyawan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS2FyeWF3YW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SKT/source/repos/FirstApp/FirstApp/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SKT/source/repos/FirstApp/FirstApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SKT/source/repos/FirstApp/FirstApp/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SKT/source/repos/FirstApp/FirstApp/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/SKT/source/repos/FirstApp/FirstApp/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-neknww0tm5

@@ -1,0 +1,79 @@
+﻿@page
+@model FirstApp.Pages.Absensi.CreateModel
+@{
+    var todayDate = DateTime.Now.ToString("yyyy-MM-dd");
+    var nowTime = DateTime.Now.ToString(@"hh\:mm");
+}
+
+
+<br />
+<h2>Tambah Absensi</h2>
+
+@if (Model.errorMessage.Length > 0)
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>@Model.errorMessage</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<form method="POST">
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Kode Karyawan</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="kodekaryawan" value="@Model.absensiInfo.kodekaryawan" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Nama Karyawan</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="namakaryawan" value="@Model.absensiInfo.namakaryawan" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Tanggal Masuk</label>
+        <div class="col-sm-6">
+            <input type="date" class="form-control" name="tanggalmasuk" value="@Model.absensiInfo.tanggalmasuk.ToString("yyyy-MM-dd")?? todayDate" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Tanggal Keluar</label>
+        <div class="col-sm-6">
+            <input type="date" class="form-control" name="tanggalkeluar" value="@Model.absensiInfo.tanggalkeluar?.ToString("yyyy-MM-dd")" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Jam Masuk</label>
+        <div class="col-sm-6">
+            <input type="time" class="form-control" name="jammasuk" value="@Model.absensiInfo.jammasuk.ToString(@"hh\:mm")" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Jam Keluar</label>
+        <div class="col-sm-6">
+            <input type="time" class="form-control" name="jamkeluar" value="@Model.absensiInfo.jamkeluar.ToString(@"hh\:mm")" />
+        </div>
+    </div>
+
+
+    @if (Model.successMessage.Length > 0)
+    {
+        <div class="row mb-3">
+            <div class="col-sm-9">
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>@Model.successMessage</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    }
+
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="col-sm-3 d-grid">
+            <a class="btn btn-outline-primary" href="/" role="button">Cancel</a>
+        </div>
+    </div>
+</form>

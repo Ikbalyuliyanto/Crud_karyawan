@@ -1,0 +1,89 @@
+﻿@page
+@model FirstApp.Pages.Karyawan.EditModel
+@{
+}
+
+<br />
+<h2>Edit Karyawan</h2>
+
+@if (Model.errorMessage.Length > 0)
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>@Model.errorMessage</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+
+<form method="POST">
+    <input type="hidden" name="id" value="@Model.karyawanInfo.id">
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Kode Karyawan</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="kodekaryawan" value="@Model.karyawanInfo.kodekaryawan" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Nama Karyawan</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="namakaryawan" value="@Model.karyawanInfo.namakaryawan" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Jenis Kelamin</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="jeniskelamin" value="@Model.karyawanInfo.jeniskelamin" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Level Karyawan</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="levelkaryawan" value="@Model.karyawanInfo.levelkaryawan" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Email</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="email" value="@Model.karyawanInfo.email" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Alamat</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="alamat" value="@Model.karyawanInfo.alamat" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">No Hp</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="nohp" value="@Model.karyawanInfo.nohp" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Keterangan</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="keterangan" value="@Model.karyawanInfo.keterangan" />
+        </div>
+    </div>
+
+    @if (Model.successMessage.Length > 0)
+    {
+        <div class="row mb-3">
+            <div class="col-sm-9">
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>@Model.successMessage</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    }
+
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="col-sm-3 d-grid">
+            <a class="btn btn-outline-primary" href="/karyawan/index" role="button">Back</a>
+        </div>
+    </div>
+</form>

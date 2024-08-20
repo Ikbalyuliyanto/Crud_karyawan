@@ -1,0 +1,44 @@
+﻿@page
+@model FirstApp.Pages.Karyawan.IndexModel
+@{
+}
+
+<br />
+<h2>Data Karyawan</h2>
+<a class='btn btn-primary btn-sm' href='/Karyawan/Create'>New Karyawan</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Kode Karyawan</th>
+            <th>Nama Karyawan</th>
+            <th>Jenis Kelamin</th>
+            <th>Level Karyawan</th>
+            <th>Email</th>
+            <th>Alamat</th>
+            <th>No Hp</th>
+            <th>Keterangan</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ListKaryawans)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td> @item.kodekaryawan </td>
+                <td> @item.namakaryawan </td>
+                <td> @item.jeniskelamin </td>
+                <td> @item.levelkaryawan </td>
+                <td> @item.email</td>
+                <td> @item.alamat</td>
+                <td> @item.nohp </td>
+                <td> @item.keterangan </td >
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Karyawan/Edit?id=@item.id">Edit</a>
+                    <a class="btn btn-danger btn-sm" href="/Karyawan/Delete?id=@item.id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
